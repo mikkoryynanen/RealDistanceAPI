@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1703.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealDistanceAPI", "RealDistanceAPI\RealDistanceAPI.csproj", "{3D0AD8AA-CA4B-465C-A60F-3754AFFEC9C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiUsers", "..\ApiUsers\ApiUsers\ApiUsers.csproj", "{D80409A6-3D04-4797-8AD9-D29B3867E2AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3D0AD8AA-CA4B-465C-A60F-3754AFFEC9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D0AD8AA-CA4B-465C-A60F-3754AFFEC9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D0AD8AA-CA4B-465C-A60F-3754AFFEC9C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D80409A6-3D04-4797-8AD9-D29B3867E2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D80409A6-3D04-4797-8AD9-D29B3867E2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D80409A6-3D04-4797-8AD9-D29B3867E2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D80409A6-3D04-4797-8AD9-D29B3867E2AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

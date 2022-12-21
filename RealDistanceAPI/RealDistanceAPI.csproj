@@ -4,16 +4,33 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>595ce99f-33b6-4808-88ce-2619c85abf04</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.11" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Models\" />
+    <None Remove="Middlewares\" />
+    <None Remove="Pomelo.EntityFrameworkCore.MySql" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Helpers\" />
+    <None Remove="MongoDB.Driver" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="Middlewares\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 </Project>

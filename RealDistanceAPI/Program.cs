@@ -1,4 +1,8 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using ApiUsers.Helpers;
+using Microsoft.EntityFrameworkCore;
+using RealDistanceAPI.Middlewares;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
@@ -19,6 +23,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseMiddleware<ApiKeyMiddleware>();
 
 app.UseAuthorization();
 
